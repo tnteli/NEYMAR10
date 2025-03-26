@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEYMAR (10)</title>
+  <link rel="icon" href="logo.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('https://wallpaperaccess.com/full/1088620.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.433);
+      z-index: 1;
+    }
+    .hero h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px #000;
+      margin-bottom: 1rem;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #FFD700;
+    }
+    .countdown {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+    .btn-custom {
+      font-size: 1.5rem;
+      padding: 10px 20px;
+      border-radius: 30px;
+      background: linear-gradient(45deg, #FFD700, #FF4500);
+      color: #fff;
+      text-decoration: none;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .btn-custom:hover {
+      transform: scale(1.1);
+      background-color: #FF6347;
+    }
+    .points ul {
+      list-style: none;
+      padding: 0;
+    }
+    .points ul li {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+    }
+    .points ul li i {
+      color: #FFD700;
+      margin-right: 10px;
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+      .btn-custom {
+        font-size: 1.2rem;
+      }
+    }
+    #blink {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #0049f4, #00fffb);
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  animation: blink-scale 2s infinite ease-in-out;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+#blink:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 126, 95, 0.8), 0 0 40px rgba(254, 180, 123, 0.8);
+}
+
+@keyframes blink-scale {
+  0%, 100% {
+    transform: scale(.9);
+   
+  }
+  50% {
+    transform: scale(1.05);
+   
+  }
+}
+
+
+  </style>
+ 
+</head>
+<body>
+  <div class="hero">
+    <div class="hero2" style="z-index: 4;">
+    <img src="logo.jpg" alt="Logo" class="img-fluid" style="width: 120px; margin-bottom: 1rem; border-radius:50%; ">
+    <h1>NEYMAR (10)</h1>
+    <h2>99% Accuracy 🏏🔥</h2>
+    <div class="countdown">
+      Free Joining Ends In... <span id="countdown">40</span> seconds
+    </div>
+     <div class="points mt-4">
+      <ul>
+        <li><i class="fa-solid fa-caret-right"></i> BACK TO BACK 18 TOSS PASS RECORD</li>
+        <li><i class="fa-solid fa-caret-right"></i> INDIA'S NO.1 TOSS FIXER</li>
+      </ul>
+    </div>
+    <a href="https://t.me/+-H4qvPnWOUozZDM1" class="" id="blink" style="text-shadow: 2px 2px black; text-transform: uppercase; border-bottom: 8px solid white;">
+      Subscribe NEYMAR (10) channel <i class="fa-brands fa-telegram"></i>
+     </a>
+    
+    <div style="margin-top: 20px;  color: white; font-size: 1.3rem; background-color: rgb(5, 152, 214);" >
+       India Most Trusted and Wanted Tipper 
+    </div>
+    <div class="py-2 px-4 mt-2 " style="background-color: gray; text-transform: uppercase; font-weight: 700; " >Jai Shah ka Friend , 100% Right Accuracy</div>
+  </div>
+  <script>
+    let remainingSeconds = 40;
+    const countdownElement = document.getElementById("countdown");
+
+    function updateCountdown() {
+      countdownElement.textContent = remainingSeconds;
+      remainingSeconds -= 1;
+
+      if (remainingSeconds < 0) {
+        remainingSeconds = 40; // Reset countdown
+      }
+    }
+
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
